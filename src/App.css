@@ -1,0 +1,287 @@
+/* Below are all the css stylings for certain elements in components. */
+.App {
+}
+
+@keyframes flashing {
+  0% {
+    color: rgb(245, 125, 125);
+  }
+  100% {
+    color: blue;
+  }
+  /* 100% {
+    color: green;
+  } */
+}
+
+@keyframes glowing {
+  0% {
+    color: rgb(40, 252, 150);
+  }
+  100% {
+    color: rgb(114, 27, 255);
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.keyboard-div {
+  margin-left: 0px;
+  margin-bottom: 0;
+  background-color: #61dafb;
+  padding: 100px;
+  padding-bottom: 150px;
+}
+
+.letterButton {
+  margin: 10px;
+}
+
+.randomWord {
+  margin-top: 50px;
+  margin-left: 150px;
+  position: absolute;
+}
+
+.roundHeading {
+  font-size: 60px;
+}
+
+.word {
+  color: rgb(58, 248, 166);
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.hangMan {
+  margin-left: 450px;
+}
+
+.reset-div {
+  display: inline-block;
+  position: absolute;
+  top: 90px;
+  right: 100px;
+}
+
+.winner {
+  font-size: 350px;
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 150px;
+  margin: 0;
+  animation: flashing 0.2s infinite;
+}
+
+.loser {
+  font-size: 350px;
+  position: absolute;
+  color: #282c34;
+  z-index: 2;
+  top: 70px;
+  left: 80px;
+  margin: 0;
+  animation: flashing 0.2s infinite;
+}
+
+.score {
+  font-size: 30px;
+  position: absolute;
+  color: #282c34;
+  z-index: 2;
+  margin: 0;
+  animation: flashing 3s infinite;
+  right: 250px;
+  top: 80px;
+}
+
+.Heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  margin-left: 480px;
+  margin-top: 20px;
+  animation: glowing 3s infinite;
+}
+
+.gameOver {
+  font-size: 200px;
+  color: #61dafb;
+  position: absolute;
+  z-index: 2;
+  color: rgb(255, 0, 0);
+  margin: 0;
+  padding: 0;
+  margin-left: 260px;
+  margin-top: 80px;
+}
+
+.gameOverLoser {
+  font-size: 200px;
+  color: #61dafb;
+  position: absolute;
+  z-index: 2;
+  color: rgb(255, 0, 0);
+  margin: 0;
+  padding: 0;
+  margin-left: 260px;
+  margin-top: 80px;
+}
+
+.youWon {
+  font-size: 100px;
+  position: relative;
+}
+
+.youLost {
+  font-size: 100px;
+  position: relative;
+}
+
+.rules {
+  background-color: hsl(260, 89%, 62%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  margin: 10px;
+  position: absolute;
+}
+
+.rules:hover {
+  background-color: hsl(210, 86%, 61%);
+  color: white;
+}
+
+.restart {
+  background-color: hsl(260, 89%, 62%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  margin: 0%;
+}
+
+.restart:hover {
+  background-color: hsl(210, 86%, 61%);
+  color: white;
+}
+
+.hide {
+  background-color: hsl(260, 89%, 62%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  margin: 0%;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.hide:hover {
+  background-color: hsl(223, 100%, 73%);
+  color: white;
+}
+
+.help {
+  width: 1000px;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-message {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.overlay-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.overlay-button:hover {
+  background-color: #45a049;
+  color: white;
+}
