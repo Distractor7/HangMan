@@ -1,74 +1,30 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Hangman Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hangman is a word guessing game where the player tries to guess a secret word by suggesting letters, by clicking a letter button one at a time. The player has a limited number of attempts to guess the word correctly (5 per round). For each incorrect guess, a part of a "hangman" figure is drawn. The game ends when the player either guesses the secret word correctly or the hangman figure is fully drawn and 5 guesses are used.
 
-## Available Scripts
+## Rules
 
-In the project directory, you can run:
+1. The game begins with a secret word that is hidden from the player.
+2. The player suggests a letter they think is in the secret word by clicking a letter button.
+3. If the suggested letter is in the secret word, all occurrences of that letter are revealed.
+4. If the suggested letter is not in the secret word, a part of the hangman figure is drawn.
+5. The player can continue suggesting letters until they either guess the secret word correctly or the hangman figure is fully drawn.
+6. After 10 rounds the users score determines whether they have won or not. If the score is 250 or above then the users wins, but if it is below 250 then the user loses.
 
-### `npm start`
+## Installation and Running the App
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To install and run the HangMan game on your computer, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Make sure you have Node.js and npm installed on your computer. If you don't have them installed, visit [Node.js official website](https://nodejs.org/) to download and install the appropriate version for your operating system.
 
-### `npm test`
+2. Clone the Hangman repository to your local machine: git clone https://github.com/Distractor7/HangMan.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Navigate to the project directory: cd HangMan/my-app
 
-### `npm run build`
+4. Install the required dependencies: rpm install 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. 5. Start the development server: npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. 6. Open your web browser and go to `http://localhost:3000`. The Hangman game should now be running on your local machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# HangMan
->>>>>>> origin/main
+Enjoy HangMan!
