@@ -3,13 +3,9 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
-  increment,
   reset,
-  setCurrentWord,
   nextRound,
   setLoser,
-  setPlaceHolderWord,
-  updatePlaceHolderWord,
   addScore,
   removeScore,
 } from "./store/counterSlice";
@@ -21,7 +17,7 @@ import Winner from "./winner";
 import Loser from "./loser";
 import Score from "./score";
 import Heading from "./Heading";
-import GameOver from "./gameOver";
+
 import GameOverLoser from "./gameOver";
 
 //Below is the app.
@@ -34,7 +30,6 @@ function App() {
   const currentWord = useSelector((state) => state.counter.currentWord);
   const placeHolderWord = useSelector((state) => state.counter.placeHolderWord);
   const round = useSelector((state) => state.counter.round);
-  const score = useSelector((state) => state.counter.score);
 
   //Below the state variables are created to show and hide certain components depending on conditional circumstances in the game.
   const [showWinner, setShowWinner] = useState(false);
